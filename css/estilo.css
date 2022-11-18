@@ -20,7 +20,7 @@ header li a, span{
     font-weight: bold;
 }
 
-#home div{
+#home .divpri{
     position: absolute;
     top: 50%;
     left: 50%;
