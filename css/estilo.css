@@ -3,6 +3,7 @@
 body, html, #home{
     height: 100vh;
     position: relative;
+    overflow-x: hidden;
 }
 
 body{
@@ -67,6 +68,52 @@ header li a, span{
     margin: 10px 5px;
 }
 
+#recursos{
+    color: white;
+    padding: 40px 0px;
+}
+
+#recursos h1{
+    color: #9bf0e1;
+    font-weight: bold;
+    font-size: 2.8em;
+    letter-spacing: -0.06em;
+}
+
+#recursos h2{
+    color: #9bf0e1;
+    font-weight: bold;
+    font-size: 2.3em;
+    letter-spacing: -0.06em;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer{
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+footer li a{
+    color: white;
+    font-size: 0.9em;
+}
+
+footer li h4{
+    color: gray;
+    font-size: 0.8em;
+}
+
+footer .nav-link{
+    padding: 1px;
+}
+
 @media (max-width: 575.98px){
     #home h1{
         font-size: 3em; 
@@ -92,6 +139,20 @@ header li a, span{
     }
 
     #servicos p{
+        font-size: 1.0em ;
+        text-align: justify;
+    }
+
+    #recursos h1{
+        font-size: 1.4em ;
+    }
+
+    #recursos h2{
+        font-size: 1.2em ;
+        text-align: justify;
+    }
+
+    #recursos p{
         font-size: 1.0em ;
         text-align: justify;
     }
@@ -149,6 +210,10 @@ header li a, span{
     #servicos p{
         font-size: 0.9em ;
         text-align: justify;
+    }
+
+    .logo{
+        width: 100px;
     }
 }
 
