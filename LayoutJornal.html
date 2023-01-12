@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background: #294C71 url("imagens/fundo.png") repeat-x;
+            padding-bottom: 41px;
+        }
+
+        #menus{
+            height: 160px;
+            width: 770px;
+            padding: 15px;
+            margin: 0px auto;
+            background: #294C71 url("imagens/detalhe-topo.png") no-repeat;
+            background-position-x: 620px;
+        }
+
+        header ul{
+            margin-top: 20px;
+            background-color: red;
+            list-style-type: none;
+        }
+
+        header ul li{
+            float: left;
+            padding: 15px;
+            background-color: #ff0000b9;
+            color:white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        header ul li:hover{
+            background-color: rgb(248, 153, 153) ;
+            cursor: pointer;
+        }
+
+        main{
+            margin: 10px auto;
+            width: 920px;
+            background-image: url("imagens/fundo-caixa.png");
+        }
+
+        main a{
+            display: block;
+            color: red;
+            margin-top: 10px;
+        }
+
+        h3{
+            background-color: #294C71;
+            color: white;
+            padding: 3px;
+            margin-bottom: 13px;
+        }
+
+        h5{
+            margin-bottom: 5px;
+            padding: 1px;
+            display: inline-block;
+            background-color: red;
+            color: white;
+        }
+
+        #coluna1{
+            width: 20%;
+            float:left;
+            padding: 10px;
+        }
+
+        #coluna1 ul{
+            list-style-type: none;
+            margin-top: 10px;
+
+        }
+
+        #coluna1 ul li{
+            padding: 6px;
+        }
+
+        #coluna1 ul li:hover{
+            Color: #a5a2a2;
+            background: white url("imagens/marcador.png") no-repeat left center;
+            text-indent: 20px;
+            cursor: pointer;
+        }
+
+        #coluna2{
+            width: 305px;
+            float:left;
+            margin-left: 30px;
+            padding: 10px;
+        }
+
+        #listaNoticias{
+            list-style: none;
+        }
+
+        #listaNoticias li{
+            border-bottom: 1px solid rgb(194, 194, 194);
+            padding: 10px;
+        }
+
+        #listaNoticias p:hover{
+           color: rgb(202, 10, 202);
+        }
+
+        #listaNoticias img{
+            width: 80px;
+            float: left;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        #listaNoticias h3{
+            color: #294C71;
+            background-color: white;
+            margin-bottom: 0px;
+        }
+
+        #listaNoticias p{
+            color: black;
+            font-size: 0.8em;
+        }
+
+        #listaNoticias a{
+            text-decoration: none;
+
+        }
+
+        #coluna3{
+            width: 305px;
+            float:left;
+            margin-left: 30px;
+            padding: 11px;
+        }
+
+        .lateral, .noticiasmeio, .noticiasdireita{
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        footer{
+            margin-bottom: 0px;
+            background-color: #294C71;
+            color: white;
+            text-indent: 80px;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menus">
+            <img src="imagens/logo.png" alt="">
+            <ul>
+                <li>Home</li>
+                <li>Brasil</li>
+                <li>Internacional</li>
+                <li>Economia</li>
+                <li>Saúde</li>
+                <li>Ciência</li>
+                <li>Fotos</li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+    </header>
+    <main>
+        <div id="coluna1">
+            <div class="lateral">
+                <h3>Entrevistas</h3>
+                <ul>
+                    <li>José Almeida</li>
+                    <li>Felipe Silva</li>
+                    <li>Renato Rodrigues</li>
+                    <li>Abelardo Silveira</li>
+                    <li>André Carlos</li>
+                    <li>Márcio Mello</li>
+                    <li>João Pedro</li>
+                    <li>Fernando Weiss</li>
+                </ul>
+            </div>
+            <div class="lateral">
+                <h3>News</h3>
+                <form>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="coluna2">
+            <div class="noticiasmeio">
+                <h3>Ultima Entrevista</h3>
+                <h5>ENTREVISTA COM FELIPE SILVA</h5>
+                <img width=100% src="imagens/doutor.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Leia mais</a>
+            </div>
+            <div class="noticiasmeio">
+                <h3>Mundo</h3>
+                <ul id="listaNoticias">
+                    <li>
+                        <a href="">
+                            <img src="imagens/mundo.jpg" alt="">
+                            <h3>Novas 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/mundo.jpg" alt="">
+                            <h3>Novas 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/mundo.jpg" alt="">
+                            <h3>Novas 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/mundo.jpg" alt="">
+                            <h3>Novas 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="coluna3">
+            <div class="noticiasdireita">
+                <h3>Destaque</h3>
+                <h5>NOVA LEGISLAÇÃO</h5>
+                <img width=100% src="imagens/taxi.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="">Leia mais</a>
+            </div>
+            <div class="noticiasdireita">
+                <h3>Noticias Recentes</h3>
+                <ul id="listaNoticias">
+                    <li>
+                        <a href="">
+                            <img src="imagens/imagem1.jpg" alt="">
+                            <h3>Novas 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/mundo.jpg" alt="">
+                            <h3>Novas 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/tecnologia.jpg" alt="">
+                            <h3>Novas 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="imagens/imagem3.jpg" alt="">
+                            <h3>Novas 4</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <div style="clear:both;"></div>
+    </main>
+    <footer>
+        <h4>Todos os direitos reservados</h4>
+    </footer>
+</body>
+</html>

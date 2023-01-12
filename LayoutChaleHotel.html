@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chale</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            max-width: 1162px;
+            min-width: 800px;
+            height: 260px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        #logo{
+            width: 800px;
+            height: 260px;
+            float: left;
+            background: beige url("imagens/topo-imagem-principal.png") no-repeat;
+            background-size: cover;
+        }
+
+        #menu{
+            width: 500px;
+            height: 260px;
+            float: right;
+            background: transparent url("imagens/topo-imagem-lateral.png") no-repeat right top;
+            background-size: cover;
+            background-position: -0px 0px;
+            position: absolute;
+            right: 0px;
+        }
+
+        #navegacao{
+            list-style: none;
+            margin: 25px 0px 0px 95px;
+        }
+
+        #textinho{
+            border: 1px solid blue;
+            margin: 10px 0px 0px 60px;
+            padding: 5px;
+            font-size: 0.8em;
+            text-indent: 10px;
+            border: none;
+            border-bottom: 1px solid #b5ab56;
+            border-top: 1px solid #b5ab56;
+            width: 420px;
+            color: #8b8448;
+        }
+
+        #textinho button{
+            margin-left: 50px;
+            width: 100px;
+            height: 30px;
+            background-color: #a29750;
+            color: #fff5b0;
+            border: 1px solid #a29750;
+            cursor: pointer;
+        }
+
+        #navegacao li{
+            margin-top: 12px;
+        }
+
+        #navegacao li a{
+            text-decoration: none;
+            color: #6e672c;
+            width: 120px;
+            text-transform: uppercase;
+            padding: 5px; 
+        }
+
+        #navegacao a:hover{
+            background-color: #fdf6be;
+        }
+
+        main{
+            max-width: 1162px;
+            margin: 0px auto;
+            background: #ede9cc url("imagens/bg-container.png") top center repeat-y;
+            border-radius: 5px;
+        }
+
+        #texto{
+            width: 50%;
+            float: left;
+        }
+
+        #texto h3{
+            color: #7d7640;
+        }
+
+        #texto p{
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        #lista{
+            width: 50%;
+            float: right;
+        }
+
+        #lista ul{
+            list-style-type: none;
+        }
+
+        #lista ul li{
+            clear: both;
+            float: left;
+            padding: 10px;
+        }
+
+        #lista ul li:hover{
+           background-color: #ede9cc;
+           cursor: pointer;
+        }
+
+        #lista img{
+            width: 30%;
+            margin-right: 7px;
+            float: left;
+        }
+ 
+        .conteudo{
+            width: 90%;
+            padding: 20px ;
+        }
+
+        .conteudo h4{
+            color: #7d7640;
+            margin-bottom: 5px;
+        }
+
+        footer{
+            margin-top: 30px;
+            padding: 16px;
+            background-color: #DFD393;
+            color: #6e672c;
+            text-indent: 80px;
+        }
+
+    </style>
+</head>
+<body>
+     <header>
+        <div id="logo">
+            <img style="margin: 13px 0px 0px 20px;" src="imagens/logochale.png" alt="logo">
+        </div>
+        <div id="menu">
+            <div id="textinho">
+                Rio de Janeiro - São Paulo - Belo Horizonte <button>RESERVAR</button>
+            </div>
+            <ul id="navegacao">
+                <li><a href="">Home</a></li>
+                <li><a href="">Historia</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Gastronomia</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            <img style="position: absolute; top:70px; right: 20px" src="imagens/depoimento.png" alt="depoimento">
+        </div>
+     </header>
+     <main>
+        <div id="texto">
+            <div class="conteudo">
+                <h3>Lorem ipsum dolor sit amet consectetur</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint beatae eveniet totam quibusdam voluptatem ad nam amet, harum voluptas ea molestias recusandae rerum, mollitia provident aut iste doloribus eaque perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, esse! Ratione, dicta consequatur excepturi, alias eius dolorem inventore aliquid quod provident, sit voluptas vero quaerat quo voluptatibus ducimus ullam optio.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, ad error quas perspiciatis velit quia animi quos perferendis fuga voluptatum unde similique suscipit iste harum quisquam repellendus quidem ratione sint!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ratione non doloremque temporibus facere voluptatum nesciunt, modi minima nemo. Qui, saepe quia illo itaque aliquam suscipit inventore perferendis eaque nisi!</p>
+            </div>
+        </div>
+        <div id="lista">
+            <div class="conteudo">
+                <ul>
+                    <li>
+                        <img style="float: left;"src="imagens/restaurante.jpg" alt="">
+                        <h4>Restaurantes</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <img src="imagens/piscina.jpg" alt="">
+                        <h4>Piscina</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                    <li style="margin-bottom:10px;">
+                        <img style="float: left;" src="imagens/apartamento.jpg" alt="">
+                        <h4>Apartamento</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+     </main>
+     <footer>
+        <h4>Todos os direitos reservados</h4>
+     </footer>
+</body>
+</html>

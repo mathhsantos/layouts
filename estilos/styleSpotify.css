@@ -1,0 +1,244 @@
+@import "UTF-8";
+
+body, html, #home{
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body{
+    background: url("../imagens/capa.png") no-repeat fixed, url("../imagens/ruido.png") no-repeat fixed, linear-gradient(50deg,#ff4169, #7c26f8) no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header li a, span{
+    color: white;
+    font-weight: bold;
+}
+
+#home .divpri{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+    color: white;
+}
+
+#home h1{
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+.btn-roxo{
+    background-color: #7c25f8;
+}
+
+.btn-m{
+    margin: 40px 10px;
+}
+
+#servicos{
+    background-color: white;
+    padding: 40px 0px;
+}
+
+#servicos h1{
+    color: #7c25f8;
+    font-weight: bold;
+    font-size: 2.8em;
+    letter-spacing: -0.06em;
+}
+
+#servicos h2{
+    color: #7c25f8;
+    font-weight: bold;
+    font-size: 2.3em;
+    letter-spacing: -0.06em;
+}
+
+
+#servicos img{
+    width: 230px;
+    margin: 10px 5px;
+}
+
+#recursos{
+    color: white;
+    padding: 40px 0px;
+}
+
+#recursos h1{
+    color: #9bf0e1;
+    font-weight: bold;
+    font-size: 2.8em;
+    letter-spacing: -0.06em;
+}
+
+#recursos h2{
+    color: #9bf0e1;
+    font-weight: bold;
+    font-size: 2.3em;
+    letter-spacing: -0.06em;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer{
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+footer li a{
+    color: white;
+    font-size: 0.9em;
+}
+
+footer li h4{
+    color: gray;
+    font-size: 0.8em;
+}
+
+footer .nav-link{
+    padding: 1px;
+}
+
+@media (max-width: 575.98px){
+    #home h1{
+        font-size: 3em; 
+        padding-bottom: 30px;
+    }
+
+    .btn-m{
+        margin: 15px 10px;
+    }
+
+    #servicos img{
+        width: 200px;
+        margin: 10px 5px;
+    }
+
+    #servicos h1{
+        font-size: 1.4em ;
+    }
+
+    #servicos h2{
+        font-size: 1.2em ;
+        text-align: justify;
+    }
+
+    #servicos p{
+        font-size: 1.0em ;
+        text-align: justify;
+    }
+
+    #recursos h1{
+        font-size: 1.4em ;
+    }
+
+    #recursos h2{
+        font-size: 1.2em ;
+        text-align: justify;
+    }
+
+    #recursos p{
+        font-size: 1.0em ;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    #home h1{
+        font-size: 3em;
+        padding-bottom: 30px;
+    }
+
+    .btn-m{
+        margin: 15px 10px;
+    }
+
+    #servicos img{
+        width: 210px;
+        margin: 10px 5px;
+    }
+
+    #servicos h1{
+        font-size: 1.3em ;
+    }
+
+    #servicos h2{
+        font-size: 1.2em ;
+        text-align: justify;
+    }
+
+    #servicos p{
+        font-size: 1.0em ;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    #home h1{
+        font-size: 4em;
+    }
+
+    #servicos img{
+        width: 181px;
+        margin: 10px 5px;
+    }
+
+    #servicos h1{
+        font-size: 1.4em ;
+    }
+
+    #servicos h2{
+        font-size: 1.2em ;
+        text-align: justify;
+    }
+
+    #servicos p{
+        font-size: 0.9em ;
+        text-align: justify;
+    }
+
+    .logo{
+        width: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    #home h1{
+        font-size: 5em;
+    }
+
+    #servicos h1{
+        font-size: 1.6em ;
+    }
+
+    #servicos h2{
+        font-size: 1.3em ;
+        text-align: justify;
+    }
+
+    #servicos p{
+        font-size: 1.1em ;
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px){
+    #home h1{
+        font-size: 6em;
+    }
+}

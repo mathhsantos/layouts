@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: #f4f2ec;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-color: rgb(77, 19, 19);
+            min-width: 100%;
+            height: 180px;
+            background-image: url("imagens/museu/fundo.png");
+        }
+
+        header nav{
+            float: right;
+            margin: 25px 140px 0px 0px;
+            
+        }
+
+        header nav ul{
+           list-style: none;    
+        }
+
+        header nav ul li{
+            float: left;
+            margin: 10px;
+            padding: 5px;
+            color: #996E23;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        header nav ul li:hover{
+            cursor: pointer;
+            color: darkgreen;
+        }
+
+        main{
+            max-width: 1205px;
+            min-width: 1200px;
+            margin: -80px auto 0px auto;
+        }
+
+        #principal{
+            width: 66%;
+            margin-right: 10px;
+            float: left;
+        }
+
+        #principal h3{
+            color: darkgreen;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        #lateral{
+            width: 29%;
+            float: right;
+            margin-right: 25px;
+        }
+
+        #imagemprincipal{
+            background: black url("imagens/museu/museu.png") no-repeat left bottom;
+            background-size: cover;
+            width: 100%;
+            height: 320px;
+        }
+
+        #depoimento{
+            background: transparent url("imagens/museu/depoimento.png") no-repeat left center;
+            width: 100%;
+            height: 320px;
+        }
+
+        #galeria{
+            background-color: #ebe7dd ;
+            padding: 25px;
+        }
+
+        #galeria h3{
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: #996E23;
+        }
+
+        #galeria a{
+            display: block;
+            background: #ebe7dd url("imagens/museu/fundo-foto.png") no-repeat;
+            background-position: 5px;
+            padding: 20px;
+            float: left;
+            margin: 5px;
+        }
+
+        .box{
+            width: 45%;
+            float: left;
+            box-sizing: border-box;
+            margin: 17px;
+            padding: 10px;
+        }
+
+        .box p{
+            margin-bottom: 10px;
+        }
+
+        .box ul{
+            margin-left: 50px;
+        }
+
+        .box a{
+            color: #996E23;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+
+        .box a:hover{
+            color: darkgreen;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+        }
+
+        footer nav{
+            text-align: center;
+            width: 540px;
+            margin: auto;
+            margin-bottom: 10px;
+            border-top: 1px solid #996E23; 
+            padding: 10px;
+        }
+
+        footer ul{
+            list-style: none;
+        }
+
+        footer ul li{
+            float: left;
+            margin: 10px;
+            color: #996E23;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        footer ul li:hover{
+            color: darkgreen;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="margin: 40px 0px 0px 80px; float: left;" src="imagens/museu/logo.png" alt="logo museu">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Exposições</li>
+                <li>Pesquisa</li>
+                <li>Acervo</li>
+                <li>Vídeos</li>
+                <li>Fotos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="principal">
+            <div id="imagemprincipal">
+            </div>
+            <div class="box">
+                <h3>VÍDEO: CONHEÇA O MUSEU</h3>
+                <iframe width="350" height="188" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <h3>MAPA: ENCONTRE O MUSEU</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2064455939962!2d-43.228717585560354!3d-22.905755043591668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1667797001637!5m2!1spt-BR!2sbr" width="350" height="188" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box">
+                <h3>EXPOSIÇÕES</h3>
+                <ul>
+                    <li><a href="">Os assustadores insetos</a></li>
+                    <li><a href="">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+                    <li><a href="">Preguiça gigante e tigre-dentes-de-sabre</a></li>
+                    <li><a href="">Plantas do Brasil Central</a></li>
+                    <li><a href="">Teresa Cristina: A imperatriz Arqueóloga</a></li>
+                    <li><a href="">Arte com Dinossauro - Paleoarte</a></li>
+                    <li><a href=""><strong>Veja todos (65)</strong></a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>200 ANOS DE HISTÓRIA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur perspiciatis ex deserunt sequi ipsum, rerum id repellendus! Id molestiae cumque pariatur deleniti ex harum at. Deleniti molestiae est minus quas.</p>
+                <a href=""><strong>Leia mais</strong></a>
+            </div>
+        </div>
+        <div id="lateral">
+            <div id="depoimento">
+            </div>
+            <div id="galeria">
+                <h3>Galeria de fotos</h3>
+                <a href=""><img src="imagens/museu/imagem1.jpg" alt="imagem1"></a>
+                <a href=""><img src="imagens/museu/imagem2.jpg" alt="imagem2"></a>
+                <a href=""><img src="imagens/museu/imagem3.jpg" alt="imagem3"></a>
+                <a href=""><img src="imagens/museu/imagem4.jpg" alt="imagem4"></a>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    <div style="clear: both;"></div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Exposições</li>
+                <li>Pesquisa</li>
+                <li>Acervo</li>
+                <li>Vídeos</li>
+                <li>Fotos</li>
+                <li>Contato</li>
+            </ul>
+            <div style="clear: both ;"></div>
+        </nav>
+        <p>2019 <span style="color:#996E23;">Museu Nacional</span> - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
