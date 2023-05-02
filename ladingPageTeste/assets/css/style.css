@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+header{
+    position: fixed;
+    line-height: 59px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+
+header .main-header{
+    max-width: 1200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0px 1rem;
+}
+
+nav .nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav a{
+    color: black;
+    text-decoration: none;
+}
+
+section{
+    background: url("./assets/img/bg-svg1.svg") no-repeat center top;
+    background-size: cover;
+    color: white;
+}
+
+.section{
+    padding: 0px 1rem;
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0px auto;
+    min-height: 100vh;
+}
+
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec1 div{
+    width: 50%;
+}
+
+.sec1 h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.bg-white{
+    background: white
+}
+
+.sec2{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+.sec2 h1{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.sec3 h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.sec3 h2{
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+}
+
+.sec3-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 15px;
+}
+
+.sec3um, 
+.sec3dois, 
+.sec3tres{
+    display: inline-block;
+    color: white;
+    content: "1";
+    position: relative;
+    margin-right: 30px;
+    transform: rotate(12deg);
+    font-style: italic;
+    font-size: 4rem;
+}
+
+
+.sec4{
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.sec4 h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.table-responsiva{
+    overflow-x: auto;
+}
+
+.sec4 table tr td,
+.sec4 table tr th{
+    border: 1px solid rgba(128, 128, 128, 0.137);
+    padding: 5px;
+}
+
+.sec4 table{
+    min-width: 550px;
+    text-align: left;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.sec4 thead{
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+.sec5{
+    color: black;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sec5 h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sec-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+
+}
+
+.img-content{
+    max-width: 36rem;
+    max-height: 36rem;
+}
+
+.img-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-content img:hover{
+    border: 5px solid black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
+
+@media (max-width: 575.98px){
+    .sec1{
+        display: block;
+    }
+
+    .sec1 div{
+        width: 100%;
+    }
+
+    .sec1 h1{
+        font-size: 2rem;
+    }
+
+    .svghtml{
+        width: 50%;
+    }
+
+    .sec3-grid{
+        display: block;
+    }
+
+    .sec-flex{
+        display: block;
+    }
+
+    .img-content{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .sec1{
+        display: block;
+    }
+
+    .sec1 div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .svghtml{
+        width: 45%;
+    }
+
+    .sec1 h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .sec3-grid{
+        display: block;
+    }
+
+    .sec-flex{
+        display: block;
+    }
+
+    .img-content{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .sec1{
+        display: block;
+    }
+
+    .sec1 div{
+        width: 100%;
+    }
+
+    .sec1 h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .svghtml{
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    
+}
+
